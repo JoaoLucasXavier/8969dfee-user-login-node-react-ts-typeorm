@@ -14,14 +14,14 @@ User authentication and authorization with node, react, typescript and typeorm
 
 ## Run App
 
-`docker-compose up -d`
-`docker exec -it node_8969dfee bash`
-`npm run typeorm migration:run`
+- `docker-compose up -d`
+- `docker exec -it node_8969dfee bash`
+- `npm run typeorm migration:run`
 
 ## Open in browser
 
-Back-end: `http://localhost:3001/`
-Front-end:` http://localhost:3000/`
+- Back-end: `http://localhost:3001/`
+- Front-end:` http://localhost:3000/`
 
 ## Endpoints
 
