@@ -1,0 +1,41 @@
+
+POST http://127.0.0.1:3001/permissions HTTP/1.1
+content-type: application/json
+
+{
+    "name":"EVERYTHING",
+    "description":"Can everything"
+}
+
+###
+
+POST http://127.0.0.1:3001/roles HTTP/1.1
+content-type: application/json
+
+{
+    "name":"ROLE_ADMIN",
+    "description":"admin role",
+    "permissions": [
+        "a47d2c72-d1be-4c24-a609-bee2c17a610c"
+    ]
+}
+
+###
+
+POST http://127.0.0.1:3001/users HTTP/1.1
+content-type: application/json
+
+{
+    "name":"John",
+    "username":"john",
+    "password": "f928264d",
+    "roles": [
+        "2e4986a5-d245-4910-8650-3372cef4ffb9"
+    ]
+}
+
+###
+
+GET http://127.0.0.1:3001/users/roles HTTP/1.1
+
+###

@@ -1,0 +1,20 @@
+
+@authToken = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyUm9sZXMiOlsiUk9MRV9BRE1JTiJdLCJpYXQiOjE2NTIzNzc2ODEsImV4cCI6MTY1MjQ2NDA4MSwic3ViIjoiZDQyZmVmZWMtMDdmMS00ZjA3LWIzZGUtZTY2MWYwNGU5OWFiIn0.G7LZIq82Q9ACRVm8kJ6bED85gAhlMN3AwixMECoaorc
+
+POST http://127.0.0.1:3001/product HTTP/1.1
+content-type: application/json
+Authorization: Bearer {{authToken}}
+{
+    "name":"Cell phone"
+}
+
+###
+
+GET http://127.0.0.1:3001/product HTTP/1.1
+Authorization: Bearer {{authToken}}
+
+
+###
+
+GET http://127.0.0.1:3001/product/1 HTTP/1.1
+Authorization: Bearer {{authToken}}

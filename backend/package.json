@@ -1,0 +1,31 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "React lab project API",
+  "main": "src/server.ts",
+  "scripts": {
+    "tsc": "tsc",
+    "start": "ts-node-dev --respawn --transpile-only --inspect -- src/server.ts --ignore-watch node_modules",
+    "typeorm": "ts-node-dev ./node_modules/typeorm/cli.js"
+  },
+  "author": "Joao Lucas Xavier",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mysql2": "^2.3.0",
+    "reflect-metadata": "^0.1.10",
+    "typeorm": "0.2.37"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.2",
+    "@types/cors": "^2.8.12",
+    "@types/express": "^4.17.13",
+    "@types/jsonwebtoken": "^8.5.5",
+    "@types/node": "^8.0.29",
+    "ts-node-dev": "^1.1.8",
+    "typescript": "3.3.3333"
+  }
+}
